@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_login"
+        android:name="com.cursosant.recomendedarch.loginModule.view.LoginFragment"
+        android:label="@string/login_title"
+        tools:layout="@layout/fragment_login"
+        />
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.cursosant.recomendedarch.homeModule.view.HomeFragment"
+        android:label="@string/home_title"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_favourite"
+        android:name="com.cursosant.recomendedarch.favouriteModule.view.FavouriteFragment"
+        android:label="@string/favourite_title"
+        tools:layout="@layout/fragment_home"/>
+
+    <fragment
+        android:id="@+id/navigation_promo"
+        android:name="com.cursosant.recomendedarch.promoModule.view.PromoFragment"
+        android:label="@string/promo_title"
+        tools:layout="@layout/fragment_promo" />
+
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="com.cursosant.recomendedarch.accountModule.view.AccountFragment"
+        android:label="@string/account_title"
+        tools:layout="@layout/fragment_account" />
+
+    <dialog
+        android:id="@+id/navigation_update"
+        android:name= "com.cursosant.recomendedarch.updateModule.view.UpdateDialogFragment"
+        android:label="@string/dialog_update_title"
+        android:layout="@layout/fragment_dialog_update"
+        />
+</navigation>
